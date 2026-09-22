@@ -1,0 +1,283 @@
+
+/* =========================================
+   TOUR NSESESERESU ECO TOURIST
+   Custom Website Styles
+   ========================================= */
+
+/* ---------- Global ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #ffffff;
+    margin: 0;
+}
+
+/* ---------- Navigation ---------- */
+#mainNav {
+    background: rgba(20, 45, 30, 0.96) !important;
+    padding: 14px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+#mainNav .navbar-brand {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+#mainNav .navbar-brand:hover {
+    color: #d4edda;
+}
+
+#mainNav .navbar-nav .nav-item {
+    margin-left: 8px;
+}
+
+#mainNav .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 9px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#mainNav .navbar-nav .nav-link:hover {
+    background: #2e7d32;
+    color: #ffffff !important;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ---------- Hero Header ---------- */
+header.bg-primary {
+    background:
+        linear-gradient(
+            rgba(18, 70, 38, 0.78),
+            rgba(32, 92, 48, 0.78)
+        ),
+        url("../../img/7.webp") center center / cover no-repeat !important;
+
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 20px 80px;
+}
+
+header h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .lead {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: auto;
+    color: #f3fff5;
+}
+
+/* ---------- Sections ---------- */
+section {
+    padding: 90px 20px;
+}
+
+section h2 {
+    color: #1b5e20;
+    font-size: 2.2rem;
+    font-weight: 750;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #43a047;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+section .lead {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* ---------- About Section ---------- */
+#about {
+    background: #ffffff;
+}
+
+#about ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+#about ul li {
+    background: #f1f8f3;
+    border-left: 5px solid #2e7d32;
+    margin-bottom: 14px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about ul li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Services Section ---------- */
+#services {
+    background: #f5f9f5 !important;
+}
+
+#services .lead {
+    line-height: 1.9;
+}
+
+/* ---------- Contact Section ---------- */
+#contact {
+    background: #ffffff;
+}
+
+.map {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.map iframe {
+    width: 90%;
+    max-width: 1100px;
+    min-height: 420px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact information */
+#contact .container {
+    margin-top: 30px;
+}
+
+#contact p.lead {
+    background: #f1f8f3;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border-left: 4px solid #2e7d32;
+}
+
+#contact p.lead:hover {
+    background: #e8f5e9;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #12351f !important;
+    padding: 25px 15px !important;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #e8f5e9 !important;
+}
+
+/* ---------- Links ---------- */
+a {
+    transition: all 0.3s ease;
+}
+
+/* ---------- Buttons / General Elements ---------- */
+.btn {
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-weight: 600;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+    background: #2e7d32;
+    color: #ffffff;
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 991px) {
+
+    #mainNav .navbar-nav {
+        padding-top: 15px;
+    }
+
+    #mainNav .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    #mainNav .navbar-nav .nav-link {
+        padding: 10px 14px;
+    }
+
+    header.bg-primary {
+        min-height: 450px;
+        padding-top: 120px;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    header .lead {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    section {
+        padding: 65px 15px;
+    }
+
+    header.bg-primary {
+        min-height: 420px;
+        padding: 110px 15px 60px;
+    }
+
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    header .lead {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    #about ul li {
+        font-size: 0.95rem;
+    }
+
+    .map iframe {
+        width: 100%;
+        min-height: 350px;
+        border-radius: 14px;
+    }
+}
+
